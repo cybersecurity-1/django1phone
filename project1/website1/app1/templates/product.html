@@ -1,0 +1,43 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+{% block title %}
+product
+{% endblock %}
+{% block content %} 
+
+<div class="container">
+  <div class="row">
+    <div class="pro1">PRODUCTS</div>
+    {% for x in products %}
+    <!-- <div class="col-sm-4">
+        <div id="inbox10">
+            <img src="/media/{{x.pro_image}}" alt="apple" width="200px" height="250px">
+            <div class="span1">
+                <span> {{x.pro_name}}</span>
+            </div>
+            <div class="span1">
+                <span>{{x.pro_price}} </span>
+            </div>
+             <a href="/addtocart/{{x.id}}">add to cart</a>
+        </div>
+    </div> -->
+    <div class="col-sm-4 mb-5">
+
+      <div class="card p-3" >
+        <img class="card-img-top" src="/media/{{x.pro_image}}" alt="Card image" >
+        <div class="span1 mt-2">
+          <span> {{x.pro_name}}</span>
+        </div>
+        <div class="span1">
+          <span>{{x.pro_price}} </span>
+        </div>
+        <a href="/addtocart/{{x.id}}" class="btn btn-primary">Add to cart</a>
+      </div>
+      </div>
+   
+    {% endfor %}
+  </div>
+  
+</div>
+    
+{% endblock %}

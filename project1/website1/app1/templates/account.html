@@ -1,0 +1,37 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+{% block title %}
+account
+{% endblock %}
+{% block content %} 
+
+    <h1>account</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3  ">
+                <div class="pt-3" style="text-align: center; background-color: rgb(47, 190, 190);" >
+                     <img src="{% static 'men.jpg'%}" alt="" class="profile-pic" id="profile-pic" >
+                     
+
+                    
+                       <div class="div1 mt-3 pb-3" >
+                        <a href="/home" >Home</a> <br>
+                        <a href="/profile" >My Profile</a> <br>
+                        <a href="/myorders" >My Order</a> <br>
+                        <a href="/mywhitch" >My Witchlist</a> <br>
+                        <a href="/noteification ">Notification</a> <br>
+                        <a href="/helpcenter ">Help Center</a> <br>
+                       </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-9  ">
+                <div style="text-align: center; background-color: rgb(47, 190, 190);">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
